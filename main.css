@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+/* font-family: 'Spartan', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  /* PRIMARY */
+  --dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  /* NEUTRAL   */
+  --dark-gray: hsl(303, 10%, 53%);
+  --light-gray: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  line-height: 1.4;
+}
+
+.reviews {
+  padding: 10px;
+}
+
+.reviews__header h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 30px 20px;
+  color: var(--dark-magenta);
+}
+
+.reviews__header p {
+  color: var(--dark-gray);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 10px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.reviews__stars {
+  margin: 20px 20px;
+}
+
+.reviews__stars-rate {
+  background-color: hsla(333, 80%, 67%, 0.12);
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-wrapper {
+  margin-bottom: 10px;
+}
+
+.star-img {
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  background-image: url("./images/icon-star.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+
+p.reviews__desc {
+  color: var(--dark-magenta);
+  text-align: center;
+  font-weight: 700;
+}
+
+.profile {
+  margin: 20px;
+}
+
+
+.profile__user {
+  background-color: var(--dark-magenta);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.profile-heading {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.profile-heading img {
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+  }
+  
+
+.desc-group {
+    padding-left: 15px;
+    
+}
+    
+
+.profile__userName {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.profile__verify {
+    color: var(--soft-pink);
+}
+
+.profile__user-comment {
+    color: var(--light-gray);
+    padding: 20px 0;
+}
+
